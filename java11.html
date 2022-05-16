@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial of a number</title>
+</head>
+<body>
+    <label>Enter the number to get the Factorial of a number </label>
+    <input type="number" id="txt">
+    <br>
+    <br>
+    <button type="submit" id="btn">Click Me</button>
+    <p class="output"></p>
+
+    <script>
+        btnClick = document.querySelector('#btn');
+    
+        btnClick.addEventListener('click', factorial);
+
+      function factorial() {
+
+            number = document.querySelector('#txt').value;
+
+       
+                let count = 1 
+            for(let i= number; i>=1; i--)
+            {
+                
+                count = count*i
+              
+                
+             
+                
+
+            }
+            
+
+            document.querySelector('.output').innerHTML= "the Factorial of a number:- "+count;  
+            
+        }
+
+
+    </script>
+    
+</body>
+</html>
